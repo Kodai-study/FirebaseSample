@@ -6,17 +6,28 @@ import java.util.List;
 
 @IgnoreExtraProperties
 public class BookSampleDataAndMemosModule {
-    public String name ;
-    public String date;
 
-    public List<BookMarkDatas> memoList;
+    private String name ;
+    private String date;
+    private List<BookMarkData> memoList;
 
-    public BookSampleDataAndMemosModule(String name, String date,List<BookMarkDatas> memoList) {
+
+
+    public BookSampleDataAndMemosModule(String name, String date,List<BookMarkData> memoList) {
         this.name = name;
         this.date = date;
         this.memoList = memoList;
     }
 
-    public BookSampleDataAndMemosModule(){}
 
+    public BookSampleDataAndMemosModule(){}
+    public String getName() {
+        return name;
+    }
+    public String getDate() {
+        return date;
+    }
+    public List<BookMarkData> getMemoList() {
+        return memoList;
+    }
 }
